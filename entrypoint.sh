@@ -11,7 +11,7 @@ export LOG_LEVEL=${LOG_LEVEL:-"warning"}
 export MODE=${MODE:-"ws"}
 
 # [ClientID:vars]
-export UUID=${UUID:-"117ff1a7-d810-4ec7-b368-6fc4491a4435"}
+export UUID=${UUID:-"2c02efde-128A-41c5-ae54-b3b4e6e3cbc0"}
 
 # [Path:vars]
 # Only use for ws mode
@@ -25,8 +25,8 @@ export FAILOVER=${FAILOVER:-"www.example.com"}
 export CERT=${CERT:-""}
 export KEY=${KEY:-""}
 if [ "$CERT" != "$KEY" ]; then
-    echo -e "$CERT" > /tmp/cert.pem
-    echo -e "$KEY"  > /tmp/key.pem
+    echo -e "$CERT" > /etc/ssl/cert.pem
+    echo -e "$KEY"  > /etc/ssl/key.pem
 fi
 
 # [SOCKS5PROXY:vars]
