@@ -21,8 +21,8 @@
       "tlsSettings": {
         "certificates": [
             {
-              "certificateFile": "/tmp/cert.pem",
-              "keyFile": "/tmp/key.pem"
+              "certificateFile": "/etc/ssl/cert.pem",
+              "keyFile": "/etc/ssl/key.pem"
             }
         ]
       },
